@@ -1,17 +1,17 @@
-# node-redis-rpctaskrunner
+# redis-rpc-taskrunner
 
 Execute remote script using redis,
 without stderr, stdout and exit code support. 
 
-Install
-###
+
+## Install
 
 ```bash
 npm i -g redis-rpc-taskrunner
 ```
 
-Usage
-###
+
+## Usage
 
 Watch current dir executable files and publish them as "methods". for exemple `./echo.sh`
 
@@ -19,7 +19,6 @@ Watch current dir executable files and publish them as "methods". for exemple `.
 # will watch 
 redis-rpc-taskrunner serve
 ```
-
 On the other side, just 
 
 ```bash
@@ -30,8 +29,9 @@ redis-rpc-taskrunner exec echo.sh "foo"
 Will pipe all stderr & stdout of the remote script to current call (exit code also).
 
 
-man
-###
+## man
+
+Conf will use `process.env` vars, overrided by cli args.
 
 ```
 $> redis-rpc-taskrunner serve -h
