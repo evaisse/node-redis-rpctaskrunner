@@ -1,0 +1,29 @@
+{
+  "name": "redis-rpc-task",
+  "version": "1.0.0",
+  "description": "Run workers & command executable through a redis broker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "redis-rpc-taskrunner": "./src/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evaisse/node-redis-rpctaskrunner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evaisse/node-redis-rpctaskrunner/issues"
+  },
+  "homepage": "https://github.com/evaisse/node-redis-rpctaskrunner#readme",
+  "dependencies": {
+    "@rauschma/stringio": "^1.4.0",
+    "commander": "^2.19.0",
+    "debug": "^2.6.9",
+    "dotenv": "^6.2.0",
+    "micro-whalla": "^0.1.21"
+  }
+}
