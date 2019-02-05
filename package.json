@@ -1,13 +1,13 @@
 {
   "name": "redis-rpc-task",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Run workers & command executable through a redis broker",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "redis-rpc-taskrunner": "./src/cli.js"
+    "rpc-taskrunner": "./src/cli.js"
   },
   "repository": {
     "type": "git",
